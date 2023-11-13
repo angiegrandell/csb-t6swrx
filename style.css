@@ -1,0 +1,331 @@
+/* ------------------------------------------------------------------------------ 
+
+This is your stylesheet, it's been pre-configured with basic 
+settings and resets that is needed.
+
+The star(*) represents all elements.
+
+------------------------------------------------------------------------------*/
+
+/* Reset box model and styling */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styles */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafa;
+  color: #38302a;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Container Styles */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 30px;
+}
+
+/* Header Styles */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Navigation Bar Styles */
+
+.navBar {
+  display: flex;
+  gap: 20px;
+}
+
+.navBar-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #7a899a;
+  transition: color 0.3s;
+  padding: 10px 20px;
+}
+
+.navBar-link:hover {
+  color: #38302a;
+}
+
+/* Heading Styles */
+
+h1 {
+  font-size: 3.5rem;
+  margin: 20px 0;
+}
+
+/* Logo Styles */
+
+.logo {
+  width: 150px;
+}
+
+/* Hero Section Styles */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 20px;
+  text-align: left;
+}
+
+/* Heading Styles (2-5) */
+
+h2,
+h3,
+h4,
+h5 {
+  font-size: 2rem;
+  margin-top: 0;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: left;
+  display: flex;
+  width: 100%;
+}
+
+/* Button Styles */
+
+.buttons {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #7a899a;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.8em 2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #38302a;
+  color: #fff;
+}
+
+/* Image Styles */
+
+img:not(.hero) {
+  float: left;
+  max-width: 40%;
+  margin: 20px;
+}
+
+/* Hero Image Styles */
+
+.hero {
+  max-width: 60%;
+  height: auto;
+  margin-top: 40px;
+}
+
+/* Sub-Section Styles */
+
+.sub-section,
+.sub-section2,
+.sub-section3,
+.sub-section4 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #f9fafa;
+  display: flex;
+  align-items: center;
+}
+
+.sub-section4 {
+  justify-content: flex-end;
+}
+
+.sub-section4 div {
+  display: space-between;
+  justify-content: center;
+}
+
+/* Contact Box Styles */
+
+.contact-box {
+  background-color: #ebe7e4;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+/* Contact Form Styles */
+
+.contact-form {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px;
+  text-align: left;
+  padding: 30px;
+  border-radius: 6px;
+  background-color: #ebe7e4;
+  flex: 1;
+}
+
+.contact-form h3 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #7a899a;
+  border-radius: 6px;
+}
+
+/* Subscribe Button Styles */
+
+.subscribe-button {
+  background-color: #7a899a;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.7em 1.5em;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: #38302a;
+  color: #fff;
+}
+
+/* Section3 Styles */
+
+.section3 {
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  margin: 40px 20px;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #f9fafa;
+  color: #38302a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Footer Links Styles */
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #38302a;
+}
+
+.footer-logo {
+  width: 80px;
+}
+
+/* Media Queries for Tablet and Mobile */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navBar {
+    margin-top: 20px;
+  }
+
+  .navBar-link {
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .hero img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .section3 {
+    max-height: 200px;
+  }
+}
